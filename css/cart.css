@@ -202,5 +202,6 @@ justify-content: space-evenly;
   width: 1174px;
   height: 24px;
   padding: 20px 15px 16px 15px;
-  float: left;
+display: flex;
+justify-content: left;
 }
