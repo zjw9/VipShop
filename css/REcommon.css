@@ -1,0 +1,71 @@
+/* 头部 */
+#head_c{
+  width: 100%;
+  min-height: 100px;
+}
+.head_b{
+  width: 1000px;
+  height: 100px;
+  margin: 0 auto;
+}
+.head_h{
+  display: flex;
+  justify-content: space-around;
+}
+.icon{
+  background: url(../img/icon-1.png) no-repeat;
+}
+.login{
+  display: inline-block;
+  width: 120px;
+  height: 56px;
+  background-position: -28px -89px;
+}
+.priture{
+  margin: 26px 0 0 2px;
+}
+.etymon{
+margin-top: 26px;
+}
+.etymon a{
+  color: #8e8e8e;
+  font-size: 10px;
+  width: 30px;
+  margin: 0 5px 0 5px;
+}
+.etymon a>i{
+  color: #f21b8c;
+  margin: -5px 5px 0 0;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+/* main */
+#main_c{
+  width: 100%;
+  background: #faa8ac;
+  height: 650px;
+  background: url(http://b.appsimg.com/upload/momin/2020/12/14/15/1607915393371.jpg);
+}
+.main_b{
+  width: 1040px;
+  height: 650px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+/* 尾部 */
+#footer_c{
+  width: 100px;
+  height: 116px;
+  background: #fff;
+}
+.footer_b{
+  width: 1000px;
+  height: 78px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 78px;
+  color: #7d6666;
+  font-size: 14px;
+
+}

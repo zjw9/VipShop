@@ -1,0 +1,516 @@
+#fw-wrap{
+  width: 100%;
+  height: 2036px;
+  background: pink;
+}
+.fw-product{
+  width: 1174px;
+  height: 654px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  z-index: 10;
+}
+.m-class{
+  width: 1152px;
+  padding: 11px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: -22px;
+}
+.m-pic{
+float: left;
+position: relative;
+
+}
+.J-mer-ImgReviem{
+  width: 420px;
+  height: 421px;
+}
+.hidden{
+  display: none;
+}
+.pic-slidewrap{
+width: 420px;
+height: 706px;
+position: relative;
+z-index: 99;
+margin-bottom: 7px;
+z-index: 99;
+}
+.show-midpic{
+  width: 420px;
+height: 420px;
+margin-bottom: 20px;
+position: relative;
+text-align: center;
+}
+
+
+ .product-text{
+  padding: 2px 0;
+border-bottom: 1px dashed #e2e2e2;
+
+}
+.other-infoCoding{
+  color: #999;
+  line-height: 20px;
+display: inline-block;
+font-size: 12px;
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+max-width: 200px;
+}
+.onsell-collect{
+  line-height: 9px;
+cursor: pointer;
+width: 70px;
+padding: 1px 0 1px 2px;
+display: inline-block;
+font-size: 12px;
+vertical-align: middle;
+margin-left: 18px;
+}
+.goods-fav-collect>.iconfont{
+  color: #F03867;
+  font-size: 14px;
+  font-weight: bold;
+}
+.goods-fav-collect{
+  width: 70px;
+  height: 21px;
+}
+.collect-tips {
+  color: #999;
+  font-size: 12px;
+}
+.collect-tips:hover{
+  color: #F03867;
+}
+.M-productInfo{
+padding-left: 30px;
+ display: flex;
+  overflow: visible;
+  height: 652px;
+  width: 670px;
+}
+.product-content-inner{
+  min-height: 538px;
+  width: 600px;
+}
+.pi-title-box{
+  width: 600px;
+  height: 50px;
+}
+.pi-titile{
+  width: 600px;
+  height: 50px;
+  margin-bottom: 10px;
+  color: #4d4d4d;
+  clear: both;
+}
+.pit-title-class{
+  display: block;
+  color: #007CFF;
+  font-size: 18px;
+}
+.pit-title-detail{
+  color: #333333;
+  font-size: 18px;
+  font-weight: 600;
+}
+.inanition{
+  width: 670px;
+  height: 20px;
+}
+.pi-prile-box{
+ width: 670px;
+ height: 114px;
+ margin-bottom: 20px;
+padding-top: 20px;
+}
+.baptize{
+  background-color: #ff2d62;
+  width: 600px;
+ height: 94px;
+ border-radius: 4px;
+}
+.baptize-content{
+  width: 600px;
+  height: 94px;
+  padding: 0 10px;
+  margin: 0 auto;
+ float: left;
+}
+.baptize-left{
+width:200px ;
+  max-width: 339px;
+  height: 60px;
+  line-height: 60px;
+  overflow: hidden;
+  float: left;
+  margin-top: 18px;
+}
+.pbox-yen{
+  line-height: 60px;
+  float: left;
+  color: #fff;
+  font-size:24px ;
+}
+.sp-price{
+  font-size: 38px;
+  color: #fff;
+  font-family: arial;
+  line-height: 60px;
+}
+.pbox-market{
+  color: #fff;
+  font-size: 16px;
+  line-height: 60px;
+}
+.sp-discount{
+  color: #fff;
+  font-size: 16px;
+  line-height: 60px;
+}
+.baptize-right{
+  float:right;
+  min-width:200px ;
+  max-width: 339px;
+  height: 60px;
+  overflow: hidden;
+  margin-top: 18px;
+  padding: 0 10px;
+}
+.sp-time-progress{
+  text-align:start;
+}
+.progress-bar-content{
+display: flex;
+margin-top: 20px;
+text-align: center;
+/* justify-content: center; */
+}
+.progress-bar-box{
+  width: 72px;
+  height: 8px;
+  border: .5px solid #fff;
+  border-radius: 5px;
+  display: inline-block;
+  display: flex;
+/* justify-content: center; */
+}
+.progress-bar{
+  background:#fff;
+  border-radius: 5px 5px 5px 5px ;
+height: 8px;
+margin-left: -.5px;
+display: block;
+}
+.progress-bar-text{
+  width: 58px;
+  height: 18px;
+  display: inline-block;
+  font-size: 12px;
+  color: #fff;
+/* float: right; */
+margin-top: -3px;
+}
+.pi-attr-box{
+  width: 590px;
+  height: 287px;
+  position: relative;
+  z-index: 10;
+  margin-top: -20px;
+  border-bottom: 1px dashed #ccc;
+}
+.cartAdd-form{
+  position: relative;
+  z-index: 5;
+}
+.J_product_delivery{
+  width: 600px;
+  height: 32px;
+}
+.g-delivery-addresss {
+  width: 600px;
+  height: 32px;
+  z-index: 20;
+  display: flex;
+  justify-content: left;
+  position: relative;
+  margin: 10px 0 10px 0;
+}
+.c-delivery-addresss-name{
+  width: 40px;
+  height: 32px;
+line-height: 32px;
+text-align: center;
+color: #999999;
+font-size: 14px;
+}
+.c-delivery-addresss-text{
+  width: 40px;
+  height: 32px;
+}
+.c-delivery-addresss-box{
+  width: 252px;
+  height: 32px;
+}
+.delivery-addresss-box{
+  width: 252px;
+  height: 32px;
+}
+.c-delivery-addresss-box
+.delivery-addresss-info{
+  width: 250px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  position: relative;
+  background: #fff;
+}
+.c-delivery-addresss-box
+.delivery-addresss-tips{
+height: 30px;
+line-height: 30px;
+padding: 0 35px 0 10px;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+.i-freight {
+margin-top: 5px;
+position: relative;
+line-height: 32px;
+z-index: 14;
+}
+.J_freight-tips{
+width: 120px;
+height: 32px;
+line-height: 32px;
+color: #333333;
+}
+.J-detail-color{
+  width: 600px;
+  height: 58px;
+  margin-top: 20px;
+}
+.i-color {
+  width: 600px;
+  height: 58px;
+  margin-top: 20px;
+  padding-top: 28px;
+  position: relative;
+  z-index: 12;
+  min-width:  40px;
+  display: flex;
+  justify-content: left;
+}
+.color-name{
+  width: 40px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #999999;
+font-size: 14px;
+}
+.color-name-t{
+  width: 40px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #999999;
+font-size: 14px;
+padding-top: -20px;
+}
+.color-list{
+  width: 600px;
+  padding-bottom:10px
+}
+.color-list-item{
+  float: left;
+  height: 32px;
+  position: relative;
+  padding: 0 10px 9px 0;
+}
+.color-selected{
+  width: 60px;
+  height: 30px;
+  padding: 0;
+}
+.color-selected>img{
+  width: 28px;
+  height: 28px;
+  background-size:cover ;
+}
+.i-tet{
+  width: 40px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #999999;
+font-size: 14px;
+margin-left: -10px;
+}
+.J_detail_size{
+  width: 600px;
+  height: 52px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.i-size{
+  padding-top: 12px;
+  position: relative;
+  width: 40px;
+  height: 41px;
+} 
+.size-name{
+  width: 40px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #999999;
+  font-size: 14px;
+}
+.size-list{
+  width: 500px;
+  height: 40px;
+  line-height: 40px;
+position: relative;
+padding-right: 120px;
+zoom: 1;
+}
+.size-com{
+  width: 400px;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+}
+.size-list-item{
+background: #fff;
+cursor: pointer;
+line-height: 26px;
+text-align: center;
+border: 1px solid #ccc;
+margin: 12px 10px 10px 0;
+padding: 1px 20px;
+font-size: 12px;
+height: 26px;
+min-width: 30px;
+max-width: 358px;
+float: left;
+position: relative;
+}
+.size-list-item:hover{
+  border: 1px solid #f03867;
+}
+.mash-s{
+  display: inline-block;
+  height: 28px;
+  line-height: 28;
+  float: left;
+  width: 21px;
+  background: #f9f8f8;
+}
+.J_detail_bug{
+  width: 600px;
+  height: 50px;
+  margin-top: 20px;
+}
+.hasFinalPrice{
+  width: 252px;
+  height: 48px;
+  background-color: #f03867;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+.finalprice{
+  width: 252px;
+  height: 48px;
+  display: flex;
+  line-height: 48px;
+  justify-content: center;
+}
+.finalprice_price{
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  font-family: Arial-BoldMT;
+}
+.finalprice_subPriceTips>a{
+  margin: 0 6px;
+  font-size: 14px;
+  color: #fff;
+  /* vertical-align: bottom; */
+}
+.J-safeguard-icon{
+  width: 420px;
+  height: 84px;
+margin-top: 50px;
+}
+.pi-promise-box{
+  width: 420px;
+  height: 54px;
+  padding: 15px 0;
+}
+.pi-promise-list{
+width: 1174px;
+padding: 9px 0;
+zoom: 1;
+}
+.other-form-box{
+  width: 600px;
+  height: 55px;
+  padding-top: 10px;
+}
+.other-service{
+  width: 600px;
+  height: 55px;
+  position: relative;
+  margin-bottom: 15px;
+  z-index: 5;
+}
+.other-name{
+  float: left;
+  margin: 2px 10px 0 0;
+  color: #999;
+}
+.other-box{
+float: left;
+text-align: left;
+font-size: 12px;
+color: #666;
+width: 560px;
+height: 50px;
+margin-top: -2px;
+}
+.other-service-tips{
+  cursor: pointer;
+  width: 560px;
+  height: 50px;
+}
+.ht-txt{
+  position: relative;
+  margin-bottom: 5px;
+  width: 540px;
+  height: 50px;
+}
+.service-wrap{
+  height: 25px;
+  line-height: 25px;
+  width: 130px;
+  height: 25px;
+  display: inline-block;
+}
+.service-wrap>i{
+  font-size: 16px;
+  color: #f03867;
+}
+.services{
+  margin-right: 10px;
+  color: #666666;
+  font-size: 12px;
+}
