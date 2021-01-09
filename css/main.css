@@ -6,7 +6,6 @@
   background: url(http://b.appsimg.com/upload/momin/2020/12/01/182/1606809162008.jpg) no-repeat center;
   background-size: 100% ;
 }
-
 /* 图文 */
 #requisite_c{
   height: 3000px;
@@ -332,7 +331,6 @@ color: #333;
 .berserk_b img:hover{
 opacity: 0.4;
 }
-
 .berserk{
   width: 1174px;
   margin: 0 auto;
