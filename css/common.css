@@ -357,7 +357,6 @@ z-index: 10;
   display: inline-block;
   width: 1000px;
   height: 52px;
-  margin: 0 120px 0 10px;
 }
 .nav_r>ul>li> .alter{
   font-size: 16px;
@@ -366,14 +365,12 @@ z-index: 10;
 }
 .nav_r>ul{
   overflow: hidden;
-  float: left;
   height: 52px;
   line-height: 52px;
   display: flex;
-  width: 100%;
 }
 .nav_r>ul li{
-  flex: .5;
+  margin: 0 15px 0 15px;
   line-height: 52px;
 }
 .nav_r>ul li a{
