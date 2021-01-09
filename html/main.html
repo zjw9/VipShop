@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,16 +15,34 @@
     width: 1174px;
     height: 412px;
   }
-
   .swiper-wrapper .swiper-slide img {
     width: 100%;
   }
 </style>
-
+<script src="../js/public.js"></script>
+<script>
+  window.onload = function(){
+      var areaC=$id('area_c');//固定
+      var navC=$id('nav_c');//头部
+      var mainF=$id('mainF');
+      var height= navC.offsetHeight;//头部距离
+     
+      window.onscroll = function(){
+        var distance = getScroll().top;
+     if(distance>height){
+      areaC.className ='fixed';
+      mainF.style.marginTop = navC.offsetHeight+'px';
+     }else{
+     areaC.className='';
+      mainF.style.marginTop = 0;
+     }
+      }
+  }
+</script>
 <body>
   <!-- 头部 -->
   <div id="tabRight">
-
+  <button></button>
   </div>
 
   <header id="container">
@@ -35,7 +52,7 @@
           <p> <a href="#">深圳市<i class="arrow"></i></a></a> </p>
         </div>
         <ul class="ull clearfix">
-          <li><a href="#" class="br">请登录</a></li>
+          <li><a href="./enter.html" class="br">请登录</a></li>
           <li><a href="./register.html" class="br">注册</a></li>
           <li><a href="#" class="br"> <i class="icons life"></i> 签到有礼</a></li>
           <li><a href="#" class="br">我的订单</a></li>
@@ -261,214 +278,231 @@
             <li><a href="#">家电</a></li>
             <li><a href="#">美妆</a></li>
             <li><a href="#">鞋包</a></li>
-            <li><a href="#">更多</a></li>
+            <li>
+              <a href="#">更多<i class="iconfont icon-qian"></i></a>
+              <ul>
+                <li><a href="#">男装</a></li>
+                <li><a href="#">运动</a></li>
+                <li><a href="#">家居</a></li>
+                <li><a href="#">配饰</a></li>
+                <li><a href="#">生活</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
   </nav>
-  <!-- 轮播图 -->
-  <main id="banner">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="../img/banner1.jpg" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="../img/banner2.jpg" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="../img/banner5.jpg" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="../img/banner10.jpg" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="../img/banner8.jpg" alt="">
-        </div>
+
+<!-- 主体 -->
+<div id="mainF">
+<!-- 轮播图 -->
+<main id="banner">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="../img/banner1.jpg" alt="">
       </div>
-      <!-- 如果需要分页器 -->
-      <div class="swiper-pagination"></div>
-
-      <!-- 如果需要导航按钮 -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- 如果需要滚动条 -->
-      <div class="swiper-scrollbar"></div>
-    </div>
-    <!-- 导航等组件可以放在container之外 -->
-  </main>
-
-  <!-- main -->
-  <figure id="requisite_c">
-    <div class="requisite_b">
-
-      <div class="suit_b">
-        <div class="suit">
-          <a href="#"><img src="../img/suit.jpg" alt=""></a>
-        </div>
-        <div class="small_suit">
-          <a href="#"><img src="../img/suit1.jpg" alt=""></a>
-          <a href="#"><img src="../img/suit2.jpg" alt=""></a>
-          <a href="#"><img src="../img/suit3.jpg" alt=""></a>
-        </div>
-
+      <div class="swiper-slide">
+        <img src="../img/banner2.jpg" alt="">
       </div>
-
-      <div class="spink">
-        <span class="pink"></span>
+      <div class="swiper-slide">
+        <img src="../img/banner5.jpg" alt="">
       </div>
-
-      <div class="parcell">
-        <p class="rule"></p>
-        <h2>每日必看专区</h2>
-        <p class="rule"></p>
+      <div class="swiper-slide">
+        <img src="../img/banner10.jpg" alt="">
       </div>
-      <span>THE SECTION YOU NEED</span>
-    </div>
-
-    <div class="image-text">
-      <div class="discount">
-
-        <div class="discount_t">
-          <h2><a href="#"><span>3折疯抢 </span><i class="brr"></i> 深度折扣</a></h2>
-          <p><a href="#">每日早10晚8上新 <i class="iconfont icon-shipin"></i></a></p>
-        </div>
-
-        <div class="discount_c">
-          <a href="#"><img src="../img/bgb1_06.png" alt=""></a>
-          <a href="#"><img src="../img/bgb1_08.png" alt=""></a>
-          <a href="#"><img src="../img/bgb1_03.jpg" alt=""></a>
-        </div>
-
-        <div class="discount_b">
-          <p><span> 特卖价</span>￥1399</p>
-          <p> <span>特卖价</span>￥119</p>
-          <p><span>特卖价</span>￥339</p>
-        </div>
-      </div>
-      <div class="tabutate">
-
-        <div class="tabutate_vip">
-          <h2><a href="#">排行榜</a></h2>
-          <p><a href="#">90%的会员都在买<i class="iconfont icon-xing-copy"></i></a></p>
-        </div>
-
-        <div class="abbr">
-          <a href="#"><img src="../img/bgb2_06.png" alt=""></a>
-          <a href="#"><img src="../img/bgb2_08.png" alt=""></a>
-          <a href="#"><img src="../img/bgb2_03.jpg" alt=""></a>
-        </div>
+      <div class="swiper-slide">
+        <img src="../img/banner8.jpg" alt="">
       </div>
     </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
 
-    <div class="focus">
-      <div class="focus_c">
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
 
-        <div class="focus_t">
-          <h2><a href="#"><span> 唯品快抢</span> <i class="brr"></i> 精选爆款天天低价</a></h2>
-          <p><a href="#"> 美好生活抢先到 <i class="iconfont icon-yingtao"></i> </a></p>
-        </div>
+    <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  <!-- 导航等组件可以放在container之外 -->
+</main>
 
-        <div class="focus_cc">
-          <a href="#"><img src="../img/price_03.jpg" alt=""></a>
-          <a href="#"><img src="../img/price_05.jpg" alt=""></a>
-          <a href="#"><img src="../img/price_07.jpg" alt=""></a>
-          <a href="#"><img src="../img/price_09.jpg" alt=""></a>
-          <a href="#"><img src="../img/price_11.jpg" alt=""></a>
-          <a href="#"><img src="../img/price_13.jpg" alt=""></a>
-        </div>
+<!-- main -->
+<figure id="requisite_c">
+  <div class="requisite_b">
 
-        <div class="focus_b">
-          <p><span> 特卖价</span>￥59</p>
-          <p><span>特卖价</span>￥34</p>
-          <p><span>特卖价</span>￥79</p>
-          <p><span> 特卖价</span>￥58</p>
-          <p><span>特卖价</span>￥53</p>
-          <p><span>特卖价</span>￥68</p>
-        </div>
+    <div class="suit_b">
+      <div class="suit">
+        <a href="#"><img src="../img/suit.jpg" alt=""></a>
+      </div>
+      <div class="small_suit">
+        <a href="#"><img src="../img/suit1.jpg" alt=""></a>
+        <a href="#"><img src="../img/suit2.jpg" alt=""></a>
+        <a href="#"><img src="../img/suit3.jpg" alt=""></a>
+      </div>
+
+    </div>
+
+    <div class="spink">
+      <span class="pink"></span>
+    </div>
+
+    <div class="parcell">
+      <p class="rule"></p>
+      <h2>每日必看专区</h2>
+      <p class="rule"></p>
+    </div>
+    <span>THE SECTION YOU NEED</span>
+  </div>
+
+  <div class="image-text">
+    <div class="discount">
+
+      <div class="discount_t">
+        <h2><a href="#"><span>3折疯抢 </span><i class="brr"></i> 深度折扣</a></h2>
+        <p><a href="#">每日早10晚8上新 <i class="iconfont icon-shipin"></i></a></p>
+      </div>
+
+      <div class="discount_c">
+        <a href="#"><img src="../img/bgb1_06.png" alt=""></a>
+        <a href="#"><img src="../img/bgb1_08.png" alt=""></a>
+        <a href="#"><img src="../img/bgb1_03.jpg" alt=""></a>
+      </div>
+
+      <div class="discount_b">
+        <p><span> 特卖价</span>￥1399</p>
+        <p> <span>特卖价</span>￥119</p>
+        <p><span>特卖价</span>￥339</p>
+      </div>
+    </div>
+    <div class="tabutate">
+
+      <div class="tabutate_vip">
+        <h2><a href="#">排行榜</a></h2>
+        <p><a href="#">90%的会员都在买<i class="iconfont icon-xing-copy"></i></a></p>
+      </div>
+
+      <div class="abbr">
+        <a href="#"><img src="../img/bgb2_06.png" alt=""></a>
+        <a href="#"><img src="../img/bgb2_08.png" alt=""></a>
+        <a href="#"><img src="../img/bgb2_03.jpg" alt=""></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="focus">
+    <div class="focus_c">
+
+      <div class="focus_t">
+        <h2><a href="#"><span> 唯品快抢</span> <i class="brr"></i> 精选爆款天天低价</a></h2>
+        <p><a href="#"> 美好生活抢先到 <i class="iconfont icon-yingtao"></i> </a></p>
+      </div>
+
+      <div class="focus_cc">
+        <a href="#"><img src="../img/price_03.jpg" alt=""></a>
+        <a href="#"><img src="../img/price_05.jpg" alt=""></a>
+        <a href="#"><img src="../img/price_07.jpg" alt=""></a>
+        <a href="#"><img src="../img/price_09.jpg" alt=""></a>
+        <a href="#"><img src="../img/price_11.jpg" alt=""></a>
+        <a href="#"><img src="../img/price_13.jpg" alt=""></a>
+      </div>
+
+      <div class="focus_b">
+        <p><span> 特卖价</span>￥59</p>
+        <p><span>特卖价</span>￥34</p>
+        <p><span>特卖价</span>￥79</p>
+        <p><span> 特卖价</span>￥58</p>
+        <p><span>特卖价</span>￥53</p>
+        <p><span>特卖价</span>￥68</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="special">
+    <img src="../img/special.png" alt="">
+  </div>
+
+  <div class="blouse">
+    <div class="woman">
+      <h2><span>女装</span>品牌<i>WOMEN'S FASHION</i> </h2>
+      <a href="#">全部女装品牌 <i class="iconfont icon-nvzhuang"></i></a>
+    </div>
+  </div>
+
+ <div class="">
+  <div class="berserk">
+    <div class="berserk_b">
+      <a href="#"><img src="https://c.vpimg1.com/upcb/2020/12/31/196/ias_160939505062433_570x273_90.jpg" alt=""></a>
+      <a href="#"><img src="https://d.vpimg1.com/upcb/2020/12/31/190/ias_160941139813721_570x273_90.jpg" alt=""></a>
+    </div>
+    <div class="maxtxt">
+      <div class="language">
+        <h2>紫澜门女装-大牌疯抢专场</h2>
+        <p><span>3</span>折封顶</p>
+      </div>
+      <div class="language">
+        <h2>La Chapelle SPORT女装-最后疯抢专场</h2>
+        <p><span>3</span>折封顶</p>
+      </div>
+    </div>
+    <div class="berserk_b">
+      <a href="#"><img src="https://c.vpimg1.com/upcb/2020/12/31/31/ias_160939988834279_570x273_90.jpg" alt=""></a>
+      <a href="#"><img src="https://d.vpimg1.com/upcb/2020/11/23/64/ias_160611569802823_570x273_90.jpg" alt=""></a>
+    </div>
+    <div class="maxtxt">
+      <div class="language">
+        <h2>La Chapelle SPORT女装最后疯抢专场</h2>
+        <p><span>3</span>折封顶</p>
+      </div>
+      <div class="language">
+        <h2>7.MODIFIER女装-最后疯抢专场</h2>
+        <p><span>3</span>折封顶</p>
+      </div>
+    </div>
+    <div class="berserk_b">
+      <a href="#"><img src="https://d.vpimg1.com/upcb/2020/11/18/87/ias_160566862436086_570x273_90.jpg" alt=""></a>
+      <a href="#"><img
+          src="https://d.vpimg1.com/upcb/2020/12/17/107/ias_773b7fb6bfef656811ab79f576601560_570x273_90.jpg"
+          alt=""></a>
+    </div>
+    <div class="maxtxt">
+      <div class="language">
+        <h2>YZC女装-最后疯抢专场</h2>
+        <p><span>2.9</span>折封顶</p>
+      </div>
+      <div class="language">
+        <h2>雪中飞女装专场 </h2>
+        <p><span>3</span>折封顶</p>
       </div>
     </div>
 
-    <div class="special">
-      <img src="../img/special.png" alt="">
+    <div class="berserk_b">
+      <a href="#"><img src="https://d.vpimg1.com/upcb/2020/12/14/41/ias_160791142875342_570x273_90.jpg" alt=""></a>
+      <a href="#"><img src="https://c.vpimg1.com/upcb/2020/11/27/147/ias_160646247362291_570x273_90.jpg"alt=""></a>
     </div>
-
-    <div class="blouse">
-      <div class="woman">
-        <h2><span>女装</span>品牌<i>WOMEN'S FASHION</i> </h2>
-        <a href="#">全部女装品牌 <i class="iconfont icon-nvzhuang"></i></a>
+    <div class="maxtxt">
+      <div class="language">
+        <a href="./particulars.html">
+        <h2>d'zzit女装-年终特卖专场 </h2>
+        <p><span>2.4</span>折封顶</p>
+      </a>
+      </div>
+      <div class="language">
+        <h2>优衣美女装-冬日特卖 </h2>
+        <p><span>4</span>折封顶</p>
       </div>
     </div>
-
-    <div class="berserk">
-      <div class="berserk_b">
-        <a href="#"><img src="https://c.vpimg1.com/upcb/2020/12/31/196/ias_160939505062433_570x273_90.jpg" alt=""></a>
-        <a href="#"><img src="https://d.vpimg1.com/upcb/2020/12/31/190/ias_160941139813721_570x273_90.jpg" alt=""></a>
-      </div>
-      <div class="maxtxt">
-        <div class="language">
-          <h2>紫澜门女装-大牌疯抢专场</h2>
-          <p><span>3</span>折封顶</p>
-        </div>
-        <div class="language">
-          <h2>La Chapelle SPORT女装-最后疯抢专场</h2>
-          <p><span>3</span>折封顶</p>
-        </div>
-      </div>
-      <div class="berserk_b">
-        <a href="#"><img src="https://c.vpimg1.com/upcb/2020/12/31/31/ias_160939988834279_570x273_90.jpg" alt=""></a>
-        <a href="#"><img src="https://d.vpimg1.com/upcb/2020/11/23/64/ias_160611569802823_570x273_90.jpg" alt=""></a>
-      </div>
-      <div class="maxtxt">
-        <div class="language">
-          <h2>La Chapelle SPORT女装最后疯抢专场</h2>
-          <p><span>3</span>折封顶</p>
-        </div>
-        <div class="language">
-          <h2>7.MODIFIER女装-最后疯抢专场</h2>
-          <p><span>3</span>折封顶</p>
-        </div>
-      </div>
-      <div class="berserk_b">
-        <a href="#"><img src="https://d.vpimg1.com/upcb/2020/11/18/87/ias_160566862436086_570x273_90.jpg" alt=""></a>
-        <a href="#"><img
-            src="https://d.vpimg1.com/upcb/2020/12/17/107/ias_773b7fb6bfef656811ab79f576601560_570x273_90.jpg"
-            alt=""></a>
-      </div>
-      <div class="maxtxt">
-        <div class="language">
-          <h2>YZC女装-最后疯抢专场</h2>
-          <p><span>2.9</span>折封顶</p>
-        </div>
-        <div class="language">
-          <h2>雪中飞女装专场 </h2>
-          <p><span>3</span>折封顶</p>
-        </div>
-      </div>
-
-      <div class="berserk_b">
-        <a href="#"><img src="https://d.vpimg1.com/upcb/2020/12/14/41/ias_160791142875342_570x273_90.jpg" alt=""></a>
-        <a href="#"><img src="https://c.vpimg1.com/upcb/2020/11/27/147/ias_160646247362291_570x273_90.jpg"alt=""></a>
-      </div>
-      <div class="maxtxt">
-        <div class="language">
-          <a href="./particulars.html">
-          <h2>d'zzit女装-年终特卖专场 </h2>
-          <p><span>2.4</span>折封顶</p>
-        </a>
-        </div>
-        <div class="language">
-          <h2>优衣美女装-冬日特卖 </h2>
-          <p><span>4</span>折封顶</p>
-        </div>
-      </div>
-    
-    
-    </div>
-  </figure>
+  
+  
+  </div>
+ </div>
+  
+</figure>
+  </div>
+  
   
   <!-- 尾部 -->
   <div id="footer_c">

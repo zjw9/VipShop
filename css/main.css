@@ -1,7 +1,7 @@
 
 /* 广告图 */
 #banner{
-  height: 432spx;
+  height: 432px;
   width: 100%;
   background: url(http://b.appsimg.com/upload/momin/2020/12/01/182/1606809162008.jpg) no-repeat center;
   background-size: 100% ;
@@ -16,7 +16,6 @@
   /* height: 1200px; */
   margin: 0 auto;
 }
-
 .suit_b{
   width: 1174px;
   height: 318px;
