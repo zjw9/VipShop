@@ -8,8 +8,11 @@
 }
 /* 图文 */
 #requisite_c{
+  width: 100%;
   height: 3000px;
+  
 }
+
 .requisite_b{
   width: 1174px;
   margin: 0 auto;
@@ -324,6 +327,11 @@ color: #333;
   display: flex;
   justify-content: space-between;
 }
+.berserk-all{
+  width: 1174px;
+  margin: 0 auto;
+  text-align: center;
+}
 .berserk_b img{
   opacity: 1;
   animation: linear 1s;
@@ -332,8 +340,54 @@ color: #333;
 opacity: 0.4;
 }
 .berserk{
-  width: 1174px;
-  margin: 0 auto;
+  height: 3000px;
+  position: relative;
+  width: 100%;
+}
+.if-absolute{
+  position: absolute;
+  left: 16px;
+  top: -64px;
+  width: 76px;
+  height: 336px;
+  border-radius:4px ;
+  border: 1px solid #d6d6d6;
+}
+.index-nav-list{
+  padding: 5px 7px 10px;
+  margin-bottom: 5px;
+  width: 76px;
+  height: 336px;
+}
+.nav-icon{
+  margin-right: 6px;
+  font-size: 20px;
+  color: #fff;
+  top: 2px;
+cursor: pointer;
+vertical-align: top;
+display: inline-block;
+}
+.nav-title{
+  line-height: 20px;
+  white-space: nowrap;
+  cursor: pointer;
+  vertical-align: top;
+  display: inline-block;
+}
+.curr{
+  position: relative;
+  z-index: 1;
+  left: -1px;
+  margin:4px 0 10px 0 ;
+  padding: 8px 5px 10px;
+  width: 52px;
+  height: 20px;
+  background: #f10180;
+  border-bottom: 0;
+  color: #fff;
+  border-radius: 4px;
+  border: 1px solid dashed;
 }
 .maxtxt{
   width: 1174px;
